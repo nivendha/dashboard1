@@ -1,7 +1,7 @@
 import React from "react";
 
-import Footer from "./Footer";
-import Header from "./Header";
+import Aside from "./Aside";
+import TopNav from "./TopNav";
 
 export default class Layout extends React.Component {
   constructor() {
@@ -17,9 +17,15 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <div>
-        <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
-        <Footer />
+      <div class="layout_container">
+        <div class='row'>
+          <div class='col-md-3 wrapper'>
+           <Aside/>
+          </div>
+          <div class='col-md-9 wrapper'>
+          <TopNav/>
+          </div>
+        </div>
       </div>
     );
   }

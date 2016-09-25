@@ -14,6 +14,7 @@
     "bower": "^1.7.9",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-usemin": "^0.3.24",
     "gulp-watch": "^4.3.9",
     "react": "^0.14.6",
@@ -21,7 +22,9 @@
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack-livereload-plugin": "^0.8.2"
+  },
   "scripts": {
     "start": "webpack && gulp",
     "dev": "webpack-dev-server --content-base src --inline --hot",
